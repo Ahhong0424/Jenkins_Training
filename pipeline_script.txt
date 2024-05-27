@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Brainstorming') {
+            steps {
+                echo 'Brainstorming on the new car design'
+            }
+        }
+        stage('Design') {
+            steps {
+                echo 'Design the new car'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Build the new car'
+            }
+        }
+        stage('Assess') {
+            steps {
+                echo 'Test the new car'
+                echo 'Assess the new car'
+                echo 'Come out the testing result of the new car'
+            }
+        }
+    }
+}
